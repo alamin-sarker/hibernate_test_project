@@ -157,4 +157,163 @@
   00:24:16,707 DEBUG SessionImpl:422 - after transaction completion
   00:24:16,708 DEBUG SessionImpl:273 - closing session
   00:24:16,708 DEBUG ConnectionManager:369 - connection already null in cleanup : no action
+  00:29:44,056  INFO Environment:500 - Hibernate 3.2.1
+  00:29:44,062  INFO Environment:533 - hibernate.properties not found
+  00:29:44,064  INFO Environment:667 - Bytecode provider name : cglib
+  00:29:44,067  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+  00:29:44,140  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+  00:29:44,140  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+  00:29:51,499 DEBUG Configuration:1384 - hbm2ddl.auto=create
+  00:29:51,499 DEBUG Configuration:1384 - dialect=org.hibernate.dialect.MySQLDialect
+  00:29:51,500 DEBUG Configuration:1384 - connection.url=jdbc:mysql://localhost/test
+  00:29:51,500 DEBUG Configuration:1384 - connection.username=root
+  00:29:51,500 DEBUG Configuration:1384 - connection.password=root@18
+  00:29:51,501 DEBUG Configuration:1384 - connection.driver_class=com.mysql.cj.jdbc.Driver
+  00:29:51,501 DEBUG Configuration:1583 - null<-org.dom4j.tree.DefaultAttribute@13c78c0b [Attribute: name resource value "employee.hbm.xml"]
+  00:29:51,502  INFO Configuration:553 - Reading mappings from resource : employee.hbm.xml
+  00:29:53,105  INFO HbmBinder:300 - Mapping class: org.tutorial.testhb.Employee -> emp1001
+  00:29:53,115 DEBUG HbmBinder:1270 - Mapped property: id -> id
+  00:29:53,119 DEBUG HbmBinder:1270 - Mapped property: firstName -> firstName
+  00:29:53,119 DEBUG HbmBinder:1270 - Mapped property: lastName -> lastName
+  00:29:53,120 DEBUG HbmBinder:1270 - Mapped property: email -> email
+  00:29:53,120  INFO Configuration:1538 - Configured SessionFactory: null
+  00:29:53,120 DEBUG Configuration:1539 - properties: {hibernate.connection.password=root@18, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib, java.vm.version=25.65-b01, hibernate.connection.username=root, user.country.format=BD, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject, java.runtime.version=1.8.0_65-b17, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, hbm2ddl.auto=create, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/ct/nqm1c5jj3cq6zrnjdz57flyh0000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.14.2, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, connection.password=root@18, user.home=/Users/alaminsarker, user.timezone=Asia/Dhaka, connection.username=root, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.class.path=/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/bin:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/xerces-2.6.2.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/log4j-1.2.11.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/jta.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/jdbc2_0-stdext.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/hibernate3.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/hibernate-validator.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/hibernate-commons-annotations.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/hibernate-annotations.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/ejb3-persistence.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/ehcache-1.2.3.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/dom4j-1.6.1.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/commons-logging-1.0.4.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/commons-collections-2.1.1.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/cglib-2.1.3.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/c3p0-0.9.1.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/asm.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/asm-attrs.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/antlr-2.7.6.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/mysql-connector.jar, user.name=alaminsarker, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.8, sun.java.command=org.tutorial.testhb.StoreData, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre, sun.arch.data.model=64, hibernate.connection.url=jdbc:mysql://localhost/test, hibernate.dialect=org.hibernate.dialect.MySQLDialect, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_65, java.ext.dirs=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, connection.driver_class=com.mysql.cj.jdbc.Driver, file.separator=/, hibernate.hbm2ddl.auto=create, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeBig, sun.cpu.endian=little, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, connection.url=jdbc:mysql://localhost/test, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, dialect=org.hibernate.dialect.MySQLDialect, sun.cpu.isalist=}
+  00:29:53,121 DEBUG Configuration:1282 - Preparing to build session factory with filters : {}
+  00:29:53,121 DEBUG Configuration:1117 - processing extends queue
+  00:29:53,122 DEBUG Configuration:1121 - processing collection mappings
+  00:29:53,122 DEBUG Configuration:1132 - processing native query and ResultSetMapping mappings
+  00:29:53,122 DEBUG Configuration:1140 - processing association property references
+  00:29:53,123 DEBUG Configuration:1162 - processing foreign key constraints
+  00:29:53,198  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  00:29:53,198  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+  00:29:53,199  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+  00:29:53,305  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost/test
+  00:29:53,310  INFO DriverManagerConnectionProvider:83 - connection properties: {user=root, password=root@18}
+  00:29:53,310 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  00:29:53,311 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  00:29:53,851 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:mysql://localhost/test, Isolation Level: 4
+  00:29:53,854  INFO SettingsFactory:81 - RDBMS: MySQL, version: 8.0.15
+  00:29:53,854  INFO SettingsFactory:82 - JDBC driver: MySQL Connector/J, version: mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+  00:29:53,854 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  00:29:53,865  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+  00:29:53,868  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  00:29:53,869  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  00:29:53,870  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+  00:29:53,870  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+  00:29:53,870  INFO SettingsFactory:145 - JDBC batch size: 15
+  00:29:53,870  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+  00:29:53,870  INFO SettingsFactory:153 - Scrollable result sets: enabled
+  00:29:53,871 DEBUG SettingsFactory:157 - Wrap result sets: disabled
+  00:29:53,871  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+  00:29:53,871  INFO SettingsFactory:169 - Connection release mode: auto
+  00:29:53,871  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+  00:29:53,871  INFO SettingsFactory:196 - Default batch fetch size: 1
+  00:29:53,872  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+  00:29:53,872  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+  00:29:53,872  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  00:29:53,873  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  00:29:53,874  INFO SettingsFactory:212 - Query language substitutions: {}
+  00:29:53,874  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+  00:29:53,874  INFO SettingsFactory:222 - Second-level cache: enabled
+  00:29:53,874  INFO SettingsFactory:226 - Query cache: disabled
+  00:29:53,874  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+  00:29:53,874  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+  00:29:53,874  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+  00:29:53,875 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  00:29:53,879  INFO SettingsFactory:277 - Statistics: disabled
+  00:29:53,879  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+  00:29:53,880  INFO SettingsFactory:296 - Default entity-mode: pojo
+  00:29:53,901  INFO SessionFactoryImpl:161 - building session factory
+  00:29:53,901 DEBUG SessionFactoryImpl:173 - Session factory constructed with filter configurations : {}
+  00:29:53,901 DEBUG SessionFactoryImpl:177 - instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=root@18, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib, java.vm.version=25.65-b01, hibernate.connection.username=root, user.country.format=BD, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject, java.runtime.version=1.8.0_65-b17, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, hbm2ddl.auto=create, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/ct/nqm1c5jj3cq6zrnjdz57flyh0000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.14.2, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/alaminsarker, connection.password=root@18, user.timezone=Asia/Dhaka, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, connection.username=root, java.specification.version=1.8, file.encoding=UTF-8, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, user.name=alaminsarker, java.class.path=/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/bin:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/xerces-2.6.2.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/log4j-1.2.11.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/jta.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/jdbc2_0-stdext.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/hibernate3.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/hibernate-validator.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/hibernate-commons-annotations.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/hibernate-annotations.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/ejb3-persistence.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/ehcache-1.2.3.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/dom4j-1.6.1.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/commons-logging-1.0.4.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/commons-collections-2.1.1.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/cglib-2.1.3.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/c3p0-0.9.1.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/asm.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/asm-attrs.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/antlr-2.7.6.jar:/Users/alaminsarker/git/hibernate_test_projects/FirstHibernateProject/lib/mysql-connector.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre, sun.java.command=org.tutorial.testhb.StoreData, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.connection.url=jdbc:mysql://localhost/test, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_65, java.ext.dirs=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, file.separator=/, connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=create, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeBig, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, connection.url=jdbc:mysql://localhost/test, sun.cpu.isalist=, dialect=org.hibernate.dialect.MySQLDialect}
+  00:29:54,083 DEBUG AbstractEntityPersister:2688 - Static SQL for entity: org.tutorial.testhb.Employee
+  00:29:54,083 DEBUG AbstractEntityPersister:2693 -  Version select: select id from emp1001 where id =?
+  00:29:54,083 DEBUG AbstractEntityPersister:2696 -  Snapshot select: select employee_.id, employee_.firstName as firstName0_, employee_.lastName as lastName0_, employee_.email as email0_ from emp1001 employee_ where employee_.id=?
+  00:29:54,083 DEBUG AbstractEntityPersister:2699 -  Insert 0: insert into emp1001 (firstName, lastName, email, id) values (?, ?, ?, ?)
+  00:29:54,083 DEBUG AbstractEntityPersister:2700 -  Update 0: update emp1001 set firstName=?, lastName=?, email=? where id=?
+  00:29:54,084 DEBUG AbstractEntityPersister:2701 -  Delete 0: delete from emp1001 where id=?
+  00:29:54,098 DEBUG EntityLoader:79 - Static select for entity org.tutorial.testhb.Employee: select employee0_.id as id0_0_, employee0_.firstName as firstName0_0_, employee0_.lastName as lastName0_0_, employee0_.email as email0_0_ from emp1001 employee0_ where employee0_.id=?
+  00:29:54,098 DEBUG EntityLoader:79 - Static select for entity org.tutorial.testhb.Employee: select employee0_.id as id0_0_, employee0_.firstName as firstName0_0_, employee0_.lastName as lastName0_0_, employee0_.email as email0_0_ from emp1001 employee0_ where employee0_.id=?
+  00:29:54,098 DEBUG EntityLoader:79 - Static select for entity org.tutorial.testhb.Employee: select employee0_.id as id0_0_, employee0_.firstName as firstName0_0_, employee0_.lastName as lastName0_0_, employee0_.email as email0_0_ from emp1001 employee0_ where employee0_.id=? for update
+  00:29:54,098 DEBUG EntityLoader:79 - Static select for entity org.tutorial.testhb.Employee: select employee0_.id as id0_0_, employee0_.firstName as firstName0_0_, employee0_.lastName as lastName0_0_, employee0_.email as email0_0_ from emp1001 employee0_ where employee0_.id=? for update
+  00:29:54,099 DEBUG EntityLoader:79 - Static select for entity org.tutorial.testhb.Employee: select employee0_.id as id0_0_, employee0_.firstName as firstName0_0_, employee0_.lastName as lastName0_0_, employee0_.email as email0_0_ from emp1001 employee0_ where employee0_.id=? for update
+  00:29:54,105 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity org.tutorial.testhb.Employee: select employee0_.id as id0_0_, employee0_.firstName as firstName0_0_, employee0_.lastName as lastName0_0_, employee0_.email as email0_0_ from emp1001 employee0_ where employee0_.id=?
+  00:29:54,105 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity org.tutorial.testhb.Employee: select employee0_.id as id0_0_, employee0_.firstName as firstName0_0_, employee0_.lastName as lastName0_0_, employee0_.email as email0_0_ from emp1001 employee0_ where employee0_.id=?
+  00:29:54,106 DEBUG SessionFactoryObjectFactory:39 - initializing class SessionFactoryObjectFactory
+  00:29:54,108 DEBUG SessionFactoryObjectFactory:76 - registered: 297e9fcd68ce5f880168ce5f89390000 (unnamed)
+  00:29:54,108  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+  00:29:54,108 DEBUG SessionFactoryImpl:308 - instantiated session factory
+  00:29:54,111 DEBUG Configuration:1117 - processing extends queue
+  00:29:54,111 DEBUG Configuration:1121 - processing collection mappings
+  00:29:54,111 DEBUG Configuration:1132 - processing native query and ResultSetMapping mappings
+  00:29:54,112 DEBUG Configuration:1140 - processing association property references
+  00:29:54,112 DEBUG Configuration:1162 - processing foreign key constraints
+  00:29:54,113 DEBUG Configuration:1117 - processing extends queue
+  00:29:54,113 DEBUG Configuration:1121 - processing collection mappings
+  00:29:54,113 DEBUG Configuration:1132 - processing native query and ResultSetMapping mappings
+  00:29:54,113 DEBUG Configuration:1140 - processing association property references
+  00:29:54,113 DEBUG Configuration:1162 - processing foreign key constraints
+  00:29:54,114  INFO SchemaExport:154 - Running hbm2ddl schema export
+  00:29:54,114 DEBUG SchemaExport:170 - import file not found: /import.sql
+  00:29:54,114  INFO SchemaExport:179 - exporting generated schema to database
+  00:29:54,114 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  00:29:54,114 DEBUG DriverManagerConnectionProvider:99 - using pooled JDBC connection, pool size: 0
+  00:29:54,121 DEBUG SchemaExport:303 - drop table if exists emp1001
+  00:29:54,140 DEBUG SchemaExport:303 - create table emp1001 (id integer not null, firstName varchar(255), lastName varchar(255), email varchar(255), primary key (id))
+  00:29:54,152  INFO SchemaExport:196 - schema export complete
+  00:29:54,154 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  00:29:54,154 DEBUG SessionFactoryImpl:390 - Checking 0 named HQL queries
+  00:29:54,154 DEBUG SessionFactoryImpl:410 - Checking 0 named SQL queries
+  00:29:54,181 DEBUG SessionImpl:220 - opened session at timestamp: 15496505941
+  00:29:54,183 DEBUG JDBCTransaction:54 - begin
+  00:29:54,183 DEBUG ConnectionManager:415 - opening JDBC connection
+  00:29:54,184 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  00:29:54,184 DEBUG DriverManagerConnectionProvider:99 - using pooled JDBC connection, pool size: 0
+  00:29:54,184 DEBUG JDBCTransaction:59 - current autocommit status: false
+  00:29:54,184 DEBUG JDBCContext:210 - after transaction begin
+  00:29:54,187 DEBUG IdentifierValue:77 - id unsaved-value strategy UNDEFINED
+  00:29:54,187 DEBUG AbstractSaveEventListener:489 - transient instance of: org.tutorial.testhb.Employee
+  00:29:54,188 DEBUG DefaultPersistEventListener:124 - saving transient instance
+  00:29:54,189 DEBUG AbstractSaveEventListener:113 - generated identifier: 10, using strategy: org.hibernate.id.Assigned
+  00:29:54,191 DEBUG AbstractSaveEventListener:152 - saving [org.tutorial.testhb.Employee#10]
+  00:29:54,200 DEBUG JDBCTransaction:103 - commit
+  00:29:54,201 DEBUG SessionImpl:337 - automatically flushing session
+  00:29:54,201 DEBUG AbstractFlushingEventListener:58 - flushing session
+  00:29:54,202 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+  00:29:54,203 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+  00:29:54,203 DEBUG AbstractFlushingEventListener:171 - Flushing entities and processing referenced collections
+  00:29:54,209 DEBUG AbstractFlushingEventListener:210 - Processing unreferenced collections
+  00:29:54,210 DEBUG AbstractFlushingEventListener:224 - Scheduling collection removes/(re)creates/updates
+  00:29:54,210 DEBUG AbstractFlushingEventListener:85 - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+  00:29:54,210 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+  00:29:54,211 DEBUG Printer:83 - listing entities:
+  00:29:54,212 DEBUG Printer:90 - org.tutorial.testhb.Employee{firstName=alamin, lastName=sarker, id=10, email=alamin_mas@yahoo.com}
+  00:29:54,212 DEBUG AbstractFlushingEventListener:290 - executing flush
+  00:29:54,212 DEBUG ConnectionManager:463 - registering flush begin
+  00:29:54,213 DEBUG AbstractEntityPersister:2154 - Inserting entity: [org.tutorial.testhb.Employee#10]
+  00:29:54,217 DEBUG AbstractBatcher:358 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  00:29:54,217 DEBUG SQL:393 - insert into emp1001 (firstName, lastName, email, id) values (?, ?, ?, ?)
+  00:29:54,218 DEBUG AbstractBatcher:476 - preparing statement
+  00:29:54,243 DEBUG AbstractEntityPersister:1942 - Dehydrating entity: [org.tutorial.testhb.Employee#10]
+  00:29:54,243 DEBUG StringType:80 - binding 'alamin' to parameter: 1
+  00:29:54,244 DEBUG StringType:80 - binding 'sarker' to parameter: 2
+  00:29:54,244 DEBUG StringType:80 - binding 'alamin_mas@yahoo.com' to parameter: 3
+  00:29:54,244 DEBUG IntegerType:80 - binding '10' to parameter: 4
+  00:29:54,245 DEBUG AbstractBatcher:44 - Executing batch size: 1
+  00:29:54,251 DEBUG AbstractBatcher:366 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  00:29:54,252 DEBUG AbstractBatcher:525 - closing statement
+  00:29:54,252 DEBUG ConnectionManager:472 - registering flush end
+  00:29:54,252 DEBUG AbstractFlushingEventListener:321 - post flush
+  00:29:54,253 DEBUG JDBCContext:201 - before transaction completion
+  00:29:54,253 DEBUG SessionImpl:393 - before transaction completion
+  00:29:54,255 DEBUG JDBCTransaction:116 - committed JDBC Connection
+  00:29:54,256 DEBUG JDBCContext:215 - after transaction completion
+  00:29:54,256 DEBUG ConnectionManager:398 - aggressively releasing JDBC connection
+  00:29:54,256 DEBUG ConnectionManager:435 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+  00:29:54,256 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  00:29:54,256 DEBUG SessionImpl:422 - after transaction completion
+  00:29:54,257 DEBUG SessionImpl:273 - closing session
+  00:29:54,257 DEBUG ConnectionManager:369 - connection already null in cleanup : no action
   
