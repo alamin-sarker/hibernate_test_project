@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/asm.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/cglib-2.1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/ehcache-1.2.3.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/hibernate-validator.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/jdbc2_0-stdext.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/jta.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/log4j-1.2.11.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/mysql-connector.jar"/>
+	<classpathentry kind="lib" path="/Users/alaminsarker/git/hibernate_test_projects/HB_TablePerHierarchy_Annotation/lib/xerces-2.6.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
