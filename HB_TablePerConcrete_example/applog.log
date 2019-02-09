@@ -1,0 +1,710 @@
+01:52:51,898  INFO Environment:500 - Hibernate 3.2.1
+  01:52:51,908  INFO Environment:533 - hibernate.properties not found
+  01:52:51,911  INFO Environment:667 - Bytecode provider name : cglib
+  01:52:51,919  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+  01:52:51,969  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+  01:52:51,969  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+  01:52:57,535 DEBUG Configuration:1384 - hbm2ddl.auto=update
+  01:52:57,535 DEBUG Configuration:1384 - dialect=org.hibernate.dialect.MySQLDialect
+  01:52:57,536 DEBUG Configuration:1384 - connection.url=jdbc:mysql://localhost/test
+  01:52:57,536 DEBUG Configuration:1384 - connection.username=root
+  01:52:57,536 DEBUG Configuration:1384 - connection.password=root@18
+  01:52:57,537 DEBUG Configuration:1384 - connection.driver_class=com.mysql.cj.jdbc.Driver
+  01:52:57,537 DEBUG Configuration:1583 - null<-org.dom4j.tree.DefaultAttribute@13c78c0b [Attribute: name resource value "employee.hbm.xml"]
+  01:52:57,538  INFO Configuration:553 - Reading mappings from resource : employee.hbm.xml
+  01:52:59,029  INFO HbmBinder:300 - Mapping class: com.sarker.concrete.Employee -> emp122
+  01:52:59,040 DEBUG HbmBinder:1270 - Mapped property: id -> id
+  01:52:59,050 DEBUG HbmBinder:1270 - Mapped property: name -> name
+  01:52:59,127  INFO HbmBinder:797 - Mapping union-subclass: com.sarker.concrete.Regular_Employee -> regemp122
+  01:52:59,129 DEBUG HbmBinder:1270 - Mapped property: salary -> salary
+  01:52:59,129 DEBUG HbmBinder:1270 - Mapped property: bonus -> bonus
+  01:52:59,133  INFO HbmBinder:797 - Mapping union-subclass: com.sarker.concrete.Contract_Employee -> contemp122
+  01:52:59,134 DEBUG HbmBinder:1270 - Mapped property: pay_per_hour -> pay_per_hour
+  01:52:59,134 DEBUG HbmBinder:1270 - Mapped property: contract_duration -> contract_duration
+  01:52:59,135  INFO Configuration:1538 - Configured SessionFactory: null
+  01:52:59,135 DEBUG Configuration:1539 - properties: {hibernate.connection.password=root@18, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib, java.vm.version=25.65-b01, hibernate.connection.username=root, user.country.format=BD, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example, java.runtime.version=1.8.0_65-b17, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, hbm2ddl.auto=update, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/ct/nqm1c5jj3cq6zrnjdz57flyh0000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.14.2, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, connection.password=root@18, user.home=/Users/alaminsarker, user.timezone=Asia/Dhaka, connection.username=root, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.class.path=/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/bin:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-annotations.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-validator.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/xerces-2.6.2.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/ehcache-1.2.3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/antlr-2.7.6.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-commons-annotations.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/commons-collections-2.1.1.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/dom4j-1.6.1.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/mysql-connector.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/cglib-2.1.3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/log4j-1.2.11.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/jdbc2_0-stdext.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/asm-attrs.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/ejb3-persistence.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/commons-logging-1.0.4.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/jta.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/asm.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/c3p0-0.9.1.jar, user.name=alaminsarker, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.8, sun.java.command=com.sarker.concrete.StoreData, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre, sun.arch.data.model=64, hibernate.connection.url=jdbc:mysql://localhost/test, hibernate.dialect=org.hibernate.dialect.MySQLDialect, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_65, java.ext.dirs=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, connection.driver_class=com.mysql.cj.jdbc.Driver, file.separator=/, hibernate.hbm2ddl.auto=update, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeBig, sun.cpu.endian=little, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, connection.url=jdbc:mysql://localhost/test, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, dialect=org.hibernate.dialect.MySQLDialect, sun.cpu.isalist=}
+  01:52:59,136 DEBUG Configuration:1282 - Preparing to build session factory with filters : {}
+  01:52:59,136 DEBUG Configuration:1117 - processing extends queue
+  01:52:59,138 DEBUG Configuration:1121 - processing collection mappings
+  01:52:59,139 DEBUG Configuration:1132 - processing native query and ResultSetMapping mappings
+  01:52:59,139 DEBUG Configuration:1140 - processing association property references
+  01:52:59,139 DEBUG Configuration:1162 - processing foreign key constraints
+  01:52:59,175  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  01:52:59,175  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+  01:52:59,176  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+  01:52:59,299  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost/test
+  01:52:59,299  INFO DriverManagerConnectionProvider:83 - connection properties: {user=root, password=root@18}
+  01:52:59,300 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  01:52:59,300 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  01:53:00,254 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:mysql://localhost/test, Isolation Level: 4
+  01:53:00,257  INFO SettingsFactory:81 - RDBMS: MySQL, version: 8.0.15
+  01:53:00,257  INFO SettingsFactory:82 - JDBC driver: MySQL Connector/J, version: mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+  01:53:00,258 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  01:53:00,267  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+  01:53:00,270  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  01:53:00,271  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  01:53:00,272  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+  01:53:00,272  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+  01:53:00,272  INFO SettingsFactory:145 - JDBC batch size: 15
+  01:53:00,272  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+  01:53:00,274  INFO SettingsFactory:153 - Scrollable result sets: enabled
+  01:53:00,274 DEBUG SettingsFactory:157 - Wrap result sets: disabled
+  01:53:00,275  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+  01:53:00,275  INFO SettingsFactory:169 - Connection release mode: auto
+  01:53:00,276  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+  01:53:00,276  INFO SettingsFactory:196 - Default batch fetch size: 1
+  01:53:00,276  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+  01:53:00,276  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+  01:53:00,276  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  01:53:00,277  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  01:53:00,278  INFO SettingsFactory:212 - Query language substitutions: {}
+  01:53:00,278  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+  01:53:00,278  INFO SettingsFactory:222 - Second-level cache: enabled
+  01:53:00,278  INFO SettingsFactory:226 - Query cache: disabled
+  01:53:00,281  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+  01:53:00,282  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+  01:53:00,282  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+  01:53:00,283 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  01:53:00,285  INFO SettingsFactory:277 - Statistics: disabled
+  01:53:00,285  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+  01:53:00,285  INFO SettingsFactory:296 - Default entity-mode: pojo
+  01:53:00,316  INFO SessionFactoryImpl:161 - building session factory
+  01:53:00,318 DEBUG SessionFactoryImpl:173 - Session factory constructed with filter configurations : {}
+  01:53:00,318 DEBUG SessionFactoryImpl:177 - instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=root@18, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib, java.vm.version=25.65-b01, hibernate.connection.username=root, user.country.format=BD, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example, java.runtime.version=1.8.0_65-b17, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, hbm2ddl.auto=update, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/ct/nqm1c5jj3cq6zrnjdz57flyh0000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.14.2, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/alaminsarker, connection.password=root@18, user.timezone=Asia/Dhaka, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, connection.username=root, java.specification.version=1.8, file.encoding=UTF-8, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, user.name=alaminsarker, java.class.path=/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/bin:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-annotations.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-validator.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/xerces-2.6.2.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/ehcache-1.2.3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/antlr-2.7.6.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-commons-annotations.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/commons-collections-2.1.1.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/dom4j-1.6.1.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/mysql-connector.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/cglib-2.1.3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/log4j-1.2.11.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/jdbc2_0-stdext.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/asm-attrs.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/ejb3-persistence.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/commons-logging-1.0.4.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/jta.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/asm.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/c3p0-0.9.1.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre, sun.java.command=com.sarker.concrete.StoreData, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.connection.url=jdbc:mysql://localhost/test, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_65, java.ext.dirs=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, file.separator=/, connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=update, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeBig, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, connection.url=jdbc:mysql://localhost/test, sun.cpu.isalist=, dialect=org.hibernate.dialect.MySQLDialect}
+  01:53:00,508 DEBUG AbstractEntityPersister:2688 - Static SQL for entity: com.sarker.concrete.Employee
+  01:53:00,508 DEBUG AbstractEntityPersister:2693 -  Version select: select id from emp122 where id =?
+  01:53:00,508 DEBUG AbstractEntityPersister:2696 -  Snapshot select: select employee_.id, employee_.name as name0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee_ where employee_.id=?
+  01:53:00,508 DEBUG AbstractEntityPersister:2699 -  Insert 0: insert into emp122 (name, id) values (?, ?)
+  01:53:00,509 DEBUG AbstractEntityPersister:2700 -  Update 0: update emp122 set name=? where id=?
+  01:53:00,509 DEBUG AbstractEntityPersister:2701 -  Delete 0: delete from emp122 where id=?
+  01:53:00,515 DEBUG AbstractEntityPersister:2688 - Static SQL for entity: com.sarker.concrete.Regular_Employee
+  01:53:00,515 DEBUG AbstractEntityPersister:2693 -  Version select: select id from regemp122 where id =?
+  01:53:00,515 DEBUG AbstractEntityPersister:2696 -  Snapshot select: select regular_em_.id, regular_em_.name as name0_, regular_em_.salary as salary1_, regular_em_.bonus as bonus1_ from regemp122 regular_em_ where regular_em_.id=?
+  01:53:00,515 DEBUG AbstractEntityPersister:2699 -  Insert 0: insert into regemp122 (name, salary, bonus, id) values (?, ?, ?, ?)
+  01:53:00,515 DEBUG AbstractEntityPersister:2700 -  Update 0: update regemp122 set name=?, salary=?, bonus=? where id=?
+  01:53:00,515 DEBUG AbstractEntityPersister:2701 -  Delete 0: delete from regemp122 where id=?
+  01:53:00,519 DEBUG AbstractEntityPersister:2688 - Static SQL for entity: com.sarker.concrete.Contract_Employee
+  01:53:00,520 DEBUG AbstractEntityPersister:2693 -  Version select: select id from contemp122 where id =?
+  01:53:00,520 DEBUG AbstractEntityPersister:2696 -  Snapshot select: select contract_e_.id, contract_e_.name as name0_, contract_e_.pay_per_hour as pay1_2_, contract_e_.contract_duration as contract2_2_ from contemp122 contract_e_ where contract_e_.id=?
+  01:53:00,520 DEBUG AbstractEntityPersister:2699 -  Insert 0: insert into contemp122 (name, pay_per_hour, contract_duration, id) values (?, ?, ?, ?)
+  01:53:00,520 DEBUG AbstractEntityPersister:2700 -  Update 0: update contemp122 set name=?, pay_per_hour=?, contract_duration=? where id=?
+  01:53:00,521 DEBUG AbstractEntityPersister:2701 -  Delete 0: delete from contemp122 where id=?
+  01:53:00,531 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=?
+  01:53:00,531 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=?
+  01:53:00,531 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=? for update
+  01:53:00,531 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=? for update
+  01:53:00,532 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=? for update
+  01:53:00,540 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=?
+  01:53:00,540 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=?
+  01:53:00,541 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=?
+  01:53:00,542 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=?
+  01:53:00,542 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=? for update
+  01:53:00,542 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=? for update
+  01:53:00,543 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=? for update
+  01:53:00,545 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=?
+  01:53:00,545 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=?
+  01:53:00,546 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=?
+  01:53:00,546 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=?
+  01:53:00,547 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=? for update
+  01:53:00,547 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=? for update
+  01:53:00,548 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=? for update
+  01:53:00,549 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=?
+  01:53:00,549 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=?
+  01:53:00,551 DEBUG SessionFactoryObjectFactory:39 - initializing class SessionFactoryObjectFactory
+  01:53:00,553 DEBUG SessionFactoryObjectFactory:76 - registered: 297e9fcd68ceab9e0168ceab9f850000 (unnamed)
+  01:53:00,553  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+  01:53:00,554 DEBUG SessionFactoryImpl:308 - instantiated session factory
+  01:53:00,557  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+  01:53:00,557  INFO SchemaUpdate:126 - fetching database metadata
+  01:53:00,558 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  01:53:00,558 DEBUG DriverManagerConnectionProvider:99 - using pooled JDBC connection, pool size: 0
+  01:53:00,573  INFO SchemaUpdate:138 - updating schema
+  01:53:00,574 DEBUG Configuration:1117 - processing extends queue
+  01:53:00,574 DEBUG Configuration:1121 - processing collection mappings
+  01:53:00,574 DEBUG Configuration:1132 - processing native query and ResultSetMapping mappings
+  01:53:00,574 DEBUG Configuration:1140 - processing association property references
+  01:53:00,574 DEBUG Configuration:1162 - processing foreign key constraints
+  01:53:00,575  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  01:53:00,575  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+  01:53:00,575  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+  01:53:00,576  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost/test
+  01:53:00,576  INFO DriverManagerConnectionProvider:83 - connection properties: {user=root, password=root@18}
+  01:53:00,576 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  01:53:00,577 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  01:53:00,627 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:mysql://localhost/test, Isolation Level: 4
+  01:53:00,628  INFO SettingsFactory:81 - RDBMS: MySQL, version: 8.0.15
+  01:53:00,635  INFO SettingsFactory:82 - JDBC driver: MySQL Connector/J, version: mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+  01:53:00,639 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  01:53:00,640  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+  01:53:00,641  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  01:53:00,641  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  01:53:00,641  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+  01:53:00,641  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+  01:53:00,642  INFO SettingsFactory:145 - JDBC batch size: 15
+  01:53:00,642  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+  01:53:00,642  INFO SettingsFactory:153 - Scrollable result sets: enabled
+  01:53:00,642 DEBUG SettingsFactory:157 - Wrap result sets: disabled
+  01:53:00,642  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+  01:53:00,643  INFO SettingsFactory:169 - Connection release mode: auto
+  01:53:00,643  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+  01:53:00,643  INFO SettingsFactory:196 - Default batch fetch size: 1
+  01:53:00,643  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+  01:53:00,643  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+  01:53:00,644  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  01:53:00,644  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  01:53:00,644  INFO SettingsFactory:212 - Query language substitutions: {}
+  01:53:00,644  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+  01:53:00,644  INFO SettingsFactory:222 - Second-level cache: enabled
+  01:53:00,645  INFO SettingsFactory:226 - Query cache: disabled
+  01:53:00,645  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+  01:53:00,645  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+  01:53:00,645  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+  01:53:00,645 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  01:53:00,646  INFO SettingsFactory:277 - Statistics: disabled
+  01:53:00,646  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+  01:53:00,646  INFO SettingsFactory:296 - Default entity-mode: pojo
+  01:53:00,719  INFO TableMetadata:39 - table found: test.contemp122
+  01:53:00,720  INFO TableMetadata:40 - columns: [contract_duration, pay_per_hour, name, id]
+  01:53:00,720  INFO TableMetadata:42 - foreign keys: []
+  01:53:00,720  INFO TableMetadata:43 - indexes: [primary]
+  01:53:00,720  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  01:53:00,720  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+  01:53:00,720  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+  01:53:00,721  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost/test
+  01:53:00,721  INFO DriverManagerConnectionProvider:83 - connection properties: {user=root, password=root@18}
+  01:53:00,721 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  01:53:00,721 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  01:53:00,738 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:mysql://localhost/test, Isolation Level: 4
+  01:53:00,738  INFO SettingsFactory:81 - RDBMS: MySQL, version: 8.0.15
+  01:53:00,738  INFO SettingsFactory:82 - JDBC driver: MySQL Connector/J, version: mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+  01:53:00,738 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  01:53:00,738  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+  01:53:00,739  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  01:53:00,739  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  01:53:00,740  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+  01:53:00,740  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+  01:53:00,741  INFO SettingsFactory:145 - JDBC batch size: 15
+  01:53:00,742  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+  01:53:00,742  INFO SettingsFactory:153 - Scrollable result sets: enabled
+  01:53:00,742 DEBUG SettingsFactory:157 - Wrap result sets: disabled
+  01:53:00,742  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+  01:53:00,742  INFO SettingsFactory:169 - Connection release mode: auto
+  01:53:00,742  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+  01:53:00,743  INFO SettingsFactory:196 - Default batch fetch size: 1
+  01:53:00,743  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+  01:53:00,743  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+  01:53:00,748  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  01:53:00,749  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  01:53:00,749  INFO SettingsFactory:212 - Query language substitutions: {}
+  01:53:00,750  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+  01:53:00,750  INFO SettingsFactory:222 - Second-level cache: enabled
+  01:53:00,750  INFO SettingsFactory:226 - Query cache: disabled
+  01:53:00,750  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+  01:53:00,751  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+  01:53:00,751  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+  01:53:00,751 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  01:53:00,751  INFO SettingsFactory:277 - Statistics: disabled
+  01:53:00,752  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+  01:53:00,752  INFO SettingsFactory:296 - Default entity-mode: pojo
+  01:53:00,784  INFO TableMetadata:39 - table found: test.emp122
+  01:53:00,784  INFO TableMetadata:40 - columns: [name, id]
+  01:53:00,785  INFO TableMetadata:42 - foreign keys: []
+  01:53:00,785  INFO TableMetadata:43 - indexes: [primary]
+  01:53:00,785  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  01:53:00,785  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+  01:53:00,785  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+  01:53:00,786  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost/test
+  01:53:00,786  INFO DriverManagerConnectionProvider:83 - connection properties: {user=root, password=root@18}
+  01:53:00,786 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  01:53:00,787 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  01:53:00,809 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:mysql://localhost/test, Isolation Level: 4
+  01:53:00,810  INFO SettingsFactory:81 - RDBMS: MySQL, version: 8.0.15
+  01:53:00,810  INFO SettingsFactory:82 - JDBC driver: MySQL Connector/J, version: mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+  01:53:00,810 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  01:53:00,810  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+  01:53:00,811  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  01:53:00,811  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  01:53:00,811  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+  01:53:00,811  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+  01:53:00,811  INFO SettingsFactory:145 - JDBC batch size: 15
+  01:53:00,812  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+  01:53:00,812  INFO SettingsFactory:153 - Scrollable result sets: enabled
+  01:53:00,812 DEBUG SettingsFactory:157 - Wrap result sets: disabled
+  01:53:00,812  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+  01:53:00,812  INFO SettingsFactory:169 - Connection release mode: auto
+  01:53:00,812  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+  01:53:00,812  INFO SettingsFactory:196 - Default batch fetch size: 1
+  01:53:00,812  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+  01:53:00,813  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+  01:53:00,813  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  01:53:00,813  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  01:53:00,813  INFO SettingsFactory:212 - Query language substitutions: {}
+  01:53:00,813  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+  01:53:00,813  INFO SettingsFactory:222 - Second-level cache: enabled
+  01:53:00,813  INFO SettingsFactory:226 - Query cache: disabled
+  01:53:00,813  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+  01:53:00,813  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+  01:53:00,814  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+  01:53:00,814 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  01:53:00,814  INFO SettingsFactory:277 - Statistics: disabled
+  01:53:00,814  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+  01:53:00,814  INFO SettingsFactory:296 - Default entity-mode: pojo
+  01:53:00,835  INFO TableMetadata:39 - table found: test.regemp122
+  01:53:00,836  INFO TableMetadata:40 - columns: [bonus, name, id, salary]
+  01:53:00,836  INFO TableMetadata:42 - foreign keys: []
+  01:53:00,836  INFO TableMetadata:43 - indexes: [primary]
+  01:53:00,836  INFO SchemaUpdate:160 - schema update complete
+  01:53:00,900 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  01:53:00,900 DEBUG SessionFactoryImpl:390 - Checking 0 named HQL queries
+  01:53:00,900 DEBUG SessionFactoryImpl:410 - Checking 0 named SQL queries
+  01:53:00,925  INFO DriverManagerConnectionProvider:147 - cleaning up connection pool: jdbc:mysql://localhost/test
+  01:53:00,930  INFO DriverManagerConnectionProvider:147 - cleaning up connection pool: jdbc:mysql://localhost/test
+  01:53:00,932  INFO DriverManagerConnectionProvider:147 - cleaning up connection pool: jdbc:mysql://localhost/test
+  01:53:00,943 DEBUG SessionImpl:220 - opened session at timestamp: 15496555809
+  01:53:00,944 DEBUG JDBCTransaction:54 - begin
+  01:53:00,944 DEBUG ConnectionManager:415 - opening JDBC connection
+  01:53:00,945 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  01:53:00,945 DEBUG DriverManagerConnectionProvider:99 - using pooled JDBC connection, pool size: 0
+  01:53:00,945 DEBUG JDBCTransaction:59 - current autocommit status: false
+  01:53:00,946 DEBUG JDBCContext:210 - after transaction begin
+  01:53:00,950 DEBUG IdentifierValue:104 - id unsaved-value: 0
+  01:53:00,951 DEBUG AbstractSaveEventListener:489 - transient instance of: com.sarker.concrete.Employee
+  01:53:00,951 DEBUG DefaultPersistEventListener:124 - saving transient instance
+  01:53:00,952 DEBUG IncrementGenerator:80 - fetching initial value: select max(ids_.id) from ( select id from regemp122 union select id from emp122 union select id from contemp122 ) ids_
+  01:53:00,953 DEBUG AbstractBatcher:358 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  01:53:00,953 DEBUG SQL:393 - select max(ids_.id) from ( select id from regemp122 union select id from emp122 union select id from contemp122 ) ids_
+  01:53:00,954 DEBUG AbstractBatcher:476 - preparing statement
+  01:53:00,956 DEBUG IncrementGenerator:95 - first free id: 4
+  01:53:00,958 DEBUG AbstractBatcher:366 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  01:53:00,959 DEBUG AbstractBatcher:525 - closing statement
+  01:53:00,959 DEBUG AbstractSaveEventListener:113 - generated identifier: 4, using strategy: org.hibernate.id.IncrementGenerator
+  01:53:00,961 DEBUG AbstractSaveEventListener:152 - saving [com.sarker.concrete.Employee#4]
+  01:53:00,972 DEBUG IdentifierValue:104 - id unsaved-value: 0
+  01:53:00,973 DEBUG AbstractSaveEventListener:489 - transient instance of: com.sarker.concrete.Regular_Employee
+  01:53:00,973 DEBUG DefaultPersistEventListener:124 - saving transient instance
+  01:53:00,973 DEBUG AbstractSaveEventListener:113 - generated identifier: 5, using strategy: org.hibernate.id.IncrementGenerator
+  01:53:00,973 DEBUG AbstractSaveEventListener:152 - saving [com.sarker.concrete.Regular_Employee#5]
+  01:53:00,974 DEBUG IdentifierValue:104 - id unsaved-value: 0
+  01:53:00,974 DEBUG AbstractSaveEventListener:489 - transient instance of: com.sarker.concrete.Contract_Employee
+  01:53:00,974 DEBUG DefaultPersistEventListener:124 - saving transient instance
+  01:53:00,974 DEBUG AbstractSaveEventListener:113 - generated identifier: 6, using strategy: org.hibernate.id.IncrementGenerator
+  01:53:00,975 DEBUG AbstractSaveEventListener:152 - saving [com.sarker.concrete.Contract_Employee#6]
+  01:53:00,976 DEBUG JDBCTransaction:103 - commit
+  01:53:00,976 DEBUG SessionImpl:337 - automatically flushing session
+  01:53:00,976 DEBUG AbstractFlushingEventListener:58 - flushing session
+  01:53:00,976 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+  01:53:00,977 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+  01:53:00,977 DEBUG AbstractFlushingEventListener:171 - Flushing entities and processing referenced collections
+  01:53:00,979 DEBUG AbstractFlushingEventListener:210 - Processing unreferenced collections
+  01:53:00,979 DEBUG AbstractFlushingEventListener:224 - Scheduling collection removes/(re)creates/updates
+  01:53:00,980 DEBUG AbstractFlushingEventListener:85 - Flushed: 3 insertions, 0 updates, 0 deletions to 3 objects
+  01:53:00,980 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+  01:53:00,984 DEBUG Printer:83 - listing entities:
+  01:53:00,985 DEBUG Printer:90 - com.sarker.concrete.Regular_Employee{bonus=5, name=Vivek Kumar, id=5, salary=50000.0}
+  01:53:00,985 DEBUG Printer:90 - com.sarker.concrete.Contract_Employee{contract_duration=15 hours, pay_per_hour=1000.0, name=Arjun Kumar, id=6}
+  01:53:00,985 DEBUG Printer:90 - com.sarker.concrete.Employee{name=sonoo, id=4}
+  01:53:00,986 DEBUG AbstractFlushingEventListener:290 - executing flush
+  01:53:00,986 DEBUG ConnectionManager:463 - registering flush begin
+  01:53:00,986 DEBUG AbstractEntityPersister:2154 - Inserting entity: [com.sarker.concrete.Employee#4]
+  01:53:00,989 DEBUG AbstractBatcher:358 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  01:53:00,989 DEBUG SQL:393 - insert into emp122 (name, id) values (?, ?)
+  01:53:00,989 DEBUG AbstractBatcher:476 - preparing statement
+  01:53:00,990 DEBUG AbstractEntityPersister:1942 - Dehydrating entity: [com.sarker.concrete.Employee#4]
+  01:53:00,991 DEBUG StringType:80 - binding 'sonoo' to parameter: 1
+  01:53:00,991 DEBUG IntegerType:80 - binding '4' to parameter: 2
+  01:53:00,992 DEBUG AbstractEntityPersister:2154 - Inserting entity: [com.sarker.concrete.Regular_Employee#5]
+  01:53:00,992 DEBUG AbstractBatcher:44 - Executing batch size: 1
+  01:53:00,994 DEBUG AbstractBatcher:366 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  01:53:00,994 DEBUG AbstractBatcher:525 - closing statement
+  01:53:00,995 DEBUG AbstractBatcher:358 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  01:53:00,995 DEBUG SQL:393 - insert into regemp122 (name, salary, bonus, id) values (?, ?, ?, ?)
+  01:53:00,995 DEBUG AbstractBatcher:476 - preparing statement
+  01:53:00,996 DEBUG AbstractEntityPersister:1942 - Dehydrating entity: [com.sarker.concrete.Regular_Employee#5]
+  01:53:00,996 DEBUG StringType:80 - binding 'Vivek Kumar' to parameter: 1
+  01:53:00,996 DEBUG FloatType:80 - binding '50000.0' to parameter: 2
+  01:53:00,996 DEBUG IntegerType:80 - binding '5' to parameter: 3
+  01:53:00,997 DEBUG IntegerType:80 - binding '5' to parameter: 4
+  01:53:00,997 DEBUG AbstractEntityPersister:2154 - Inserting entity: [com.sarker.concrete.Contract_Employee#6]
+  01:53:00,997 DEBUG AbstractBatcher:44 - Executing batch size: 1
+  01:53:00,999 DEBUG AbstractBatcher:366 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  01:53:00,999 DEBUG AbstractBatcher:525 - closing statement
+  01:53:01,000 DEBUG AbstractBatcher:358 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  01:53:01,000 DEBUG SQL:393 - insert into contemp122 (name, pay_per_hour, contract_duration, id) values (?, ?, ?, ?)
+  01:53:01,000 DEBUG AbstractBatcher:476 - preparing statement
+  01:53:01,001 DEBUG AbstractEntityPersister:1942 - Dehydrating entity: [com.sarker.concrete.Contract_Employee#6]
+  01:53:01,001 DEBUG StringType:80 - binding 'Arjun Kumar' to parameter: 1
+  01:53:01,001 DEBUG FloatType:80 - binding '1000.0' to parameter: 2
+  01:53:01,001 DEBUG StringType:80 - binding '15 hours' to parameter: 3
+  01:53:01,002 DEBUG IntegerType:80 - binding '6' to parameter: 4
+  01:53:01,002 DEBUG AbstractBatcher:44 - Executing batch size: 1
+  01:53:01,012 DEBUG AbstractBatcher:366 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  01:53:01,013 DEBUG AbstractBatcher:525 - closing statement
+  01:53:01,015 DEBUG ConnectionManager:472 - registering flush end
+  01:53:01,015 DEBUG AbstractFlushingEventListener:321 - post flush
+  01:53:01,016 DEBUG JDBCContext:201 - before transaction completion
+  01:53:01,016 DEBUG SessionImpl:393 - before transaction completion
+  01:53:01,018 DEBUG JDBCTransaction:116 - committed JDBC Connection
+  01:53:01,018 DEBUG JDBCContext:215 - after transaction completion
+  01:53:01,018 DEBUG ConnectionManager:398 - aggressively releasing JDBC connection
+  01:53:01,019 DEBUG ConnectionManager:435 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+  01:53:01,019 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  01:53:01,019 DEBUG SessionImpl:422 - after transaction completion
+  01:53:01,019 DEBUG SessionImpl:273 - closing session
+  01:53:01,019 DEBUG ConnectionManager:369 - connection already null in cleanup : no action
+  02:01:14,088  INFO Environment:500 - Hibernate 3.2.1
+  02:01:14,094  INFO Environment:533 - hibernate.properties not found
+  02:01:14,096  INFO Environment:667 - Bytecode provider name : cglib
+  02:01:14,099  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+  02:01:14,145  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+  02:01:14,145  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+  02:01:20,856 DEBUG Configuration:1384 - hbm2ddl.auto=update
+  02:01:20,856 DEBUG Configuration:1384 - dialect=org.hibernate.dialect.MySQLDialect
+  02:01:20,857 DEBUG Configuration:1384 - connection.url=jdbc:mysql://localhost/test
+  02:01:20,858 DEBUG Configuration:1384 - connection.username=root
+  02:01:20,858 DEBUG Configuration:1384 - connection.password=root@18
+  02:01:20,858 DEBUG Configuration:1384 - connection.driver_class=com.mysql.cj.jdbc.Driver
+  02:01:20,859 DEBUG Configuration:1583 - null<-org.dom4j.tree.DefaultAttribute@13c78c0b [Attribute: name resource value "employee.hbm.xml"]
+  02:01:20,859  INFO Configuration:553 - Reading mappings from resource : employee.hbm.xml
+  02:01:24,785  INFO HbmBinder:300 - Mapping class: com.sarker.concrete.Employee -> emp122
+  02:01:24,796 DEBUG HbmBinder:1270 - Mapped property: id -> id
+  02:01:24,800 DEBUG HbmBinder:1270 - Mapped property: name -> name
+  02:01:24,823  INFO HbmBinder:797 - Mapping union-subclass: com.sarker.concrete.Regular_Employee -> regemp122
+  02:01:24,824 DEBUG HbmBinder:1270 - Mapped property: salary -> salary
+  02:01:24,824 DEBUG HbmBinder:1270 - Mapped property: bonus -> bonus
+  02:01:24,825  INFO HbmBinder:797 - Mapping union-subclass: com.sarker.concrete.Contract_Employee -> contemp122
+  02:01:24,825 DEBUG HbmBinder:1270 - Mapped property: pay_per_hour -> pay_per_hour
+  02:01:24,826 DEBUG HbmBinder:1270 - Mapped property: contract_duration -> contract_duration
+  02:01:24,826  INFO Configuration:1538 - Configured SessionFactory: null
+  02:01:24,826 DEBUG Configuration:1539 - properties: {hibernate.connection.password=root@18, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib, java.vm.version=25.65-b01, hibernate.connection.username=root, user.country.format=BD, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example, java.runtime.version=1.8.0_65-b17, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, hbm2ddl.auto=update, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/ct/nqm1c5jj3cq6zrnjdz57flyh0000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.14.2, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, connection.password=root@18, user.home=/Users/alaminsarker, user.timezone=Asia/Dhaka, connection.username=root, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.class.path=/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/bin:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-annotations.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-validator.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/xerces-2.6.2.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/ehcache-1.2.3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/antlr-2.7.6.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-commons-annotations.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/commons-collections-2.1.1.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/dom4j-1.6.1.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/mysql-connector.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/cglib-2.1.3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/log4j-1.2.11.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/jdbc2_0-stdext.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/asm-attrs.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/ejb3-persistence.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/commons-logging-1.0.4.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/jta.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/asm.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/c3p0-0.9.1.jar, user.name=alaminsarker, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.8, sun.java.command=com.sarker.concrete.StoreData, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre, sun.arch.data.model=64, hibernate.connection.url=jdbc:mysql://localhost/test, hibernate.dialect=org.hibernate.dialect.MySQLDialect, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_65, java.ext.dirs=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, connection.driver_class=com.mysql.cj.jdbc.Driver, file.separator=/, hibernate.hbm2ddl.auto=update, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeBig, sun.cpu.endian=little, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, connection.url=jdbc:mysql://localhost/test, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, dialect=org.hibernate.dialect.MySQLDialect, sun.cpu.isalist=}
+  02:01:24,827 DEBUG Configuration:1282 - Preparing to build session factory with filters : {}
+  02:01:24,827 DEBUG Configuration:1117 - processing extends queue
+  02:01:24,828 DEBUG Configuration:1121 - processing collection mappings
+  02:01:24,828 DEBUG Configuration:1132 - processing native query and ResultSetMapping mappings
+  02:01:24,828 DEBUG Configuration:1140 - processing association property references
+  02:01:24,829 DEBUG Configuration:1162 - processing foreign key constraints
+  02:01:24,878  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  02:01:24,878  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+  02:01:24,878  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+  02:01:24,968  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost/test
+  02:01:24,968  INFO DriverManagerConnectionProvider:83 - connection properties: {user=root, password=root@18}
+  02:01:24,968 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  02:01:24,969 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  02:01:25,695 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:mysql://localhost/test, Isolation Level: 4
+  02:01:25,697  INFO SettingsFactory:81 - RDBMS: MySQL, version: 8.0.15
+  02:01:25,698  INFO SettingsFactory:82 - JDBC driver: MySQL Connector/J, version: mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+  02:01:25,698 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  02:01:25,709  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+  02:01:25,713  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  02:01:25,714  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  02:01:25,715  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+  02:01:25,715  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+  02:01:25,715  INFO SettingsFactory:145 - JDBC batch size: 15
+  02:01:25,715  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+  02:01:25,716  INFO SettingsFactory:153 - Scrollable result sets: enabled
+  02:01:25,716 DEBUG SettingsFactory:157 - Wrap result sets: disabled
+  02:01:25,716  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+  02:01:25,716  INFO SettingsFactory:169 - Connection release mode: auto
+  02:01:25,717  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+  02:01:25,717  INFO SettingsFactory:196 - Default batch fetch size: 1
+  02:01:25,717  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+  02:01:25,717  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+  02:01:25,717  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  02:01:25,719  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  02:01:25,719  INFO SettingsFactory:212 - Query language substitutions: {}
+  02:01:25,720  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+  02:01:25,720  INFO SettingsFactory:222 - Second-level cache: enabled
+  02:01:25,720  INFO SettingsFactory:226 - Query cache: disabled
+  02:01:25,722  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+  02:01:25,723  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+  02:01:25,723  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+  02:01:25,723 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  02:01:25,726  INFO SettingsFactory:277 - Statistics: disabled
+  02:01:25,726  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+  02:01:25,726  INFO SettingsFactory:296 - Default entity-mode: pojo
+  02:01:25,756  INFO SessionFactoryImpl:161 - building session factory
+  02:01:25,757 DEBUG SessionFactoryImpl:173 - Session factory constructed with filter configurations : {}
+  02:01:25,757 DEBUG SessionFactoryImpl:177 - instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=root@18, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib, java.vm.version=25.65-b01, hibernate.connection.username=root, user.country.format=BD, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example, java.runtime.version=1.8.0_65-b17, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, hbm2ddl.auto=update, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/ct/nqm1c5jj3cq6zrnjdz57flyh0000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.14.2, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/alaminsarker, connection.password=root@18, user.timezone=Asia/Dhaka, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, connection.username=root, java.specification.version=1.8, file.encoding=UTF-8, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, user.name=alaminsarker, java.class.path=/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/bin:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-annotations.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-validator.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/xerces-2.6.2.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/ehcache-1.2.3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/antlr-2.7.6.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/hibernate-commons-annotations.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/commons-collections-2.1.1.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/dom4j-1.6.1.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/mysql-connector.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/cglib-2.1.3.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/log4j-1.2.11.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/jdbc2_0-stdext.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/asm-attrs.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/ejb3-persistence.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/commons-logging-1.0.4.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/jta.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/asm.jar:/Users/alaminsarker/Documents/workspace/HB_TablePerConcrete_example/lib/c3p0-0.9.1.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre, sun.java.command=com.sarker.concrete.StoreData, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.connection.url=jdbc:mysql://localhost/test, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_65, java.ext.dirs=/Users/alaminsarker/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, file.separator=/, connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=update, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeBig, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, connection.url=jdbc:mysql://localhost/test, sun.cpu.isalist=, dialect=org.hibernate.dialect.MySQLDialect}
+  02:01:25,933 DEBUG AbstractEntityPersister:2688 - Static SQL for entity: com.sarker.concrete.Employee
+  02:01:25,934 DEBUG AbstractEntityPersister:2693 -  Version select: select id from emp122 where id =?
+  02:01:25,934 DEBUG AbstractEntityPersister:2696 -  Snapshot select: select employee_.id, employee_.name as name0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee_ where employee_.id=?
+  02:01:25,935 DEBUG AbstractEntityPersister:2699 -  Insert 0: insert into emp122 (name, id) values (?, ?)
+  02:01:25,936 DEBUG AbstractEntityPersister:2700 -  Update 0: update emp122 set name=? where id=?
+  02:01:25,936 DEBUG AbstractEntityPersister:2701 -  Delete 0: delete from emp122 where id=?
+  02:01:25,947 DEBUG AbstractEntityPersister:2688 - Static SQL for entity: com.sarker.concrete.Regular_Employee
+  02:01:25,947 DEBUG AbstractEntityPersister:2693 -  Version select: select id from regemp122 where id =?
+  02:01:25,948 DEBUG AbstractEntityPersister:2696 -  Snapshot select: select regular_em_.id, regular_em_.name as name0_, regular_em_.salary as salary1_, regular_em_.bonus as bonus1_ from regemp122 regular_em_ where regular_em_.id=?
+  02:01:25,948 DEBUG AbstractEntityPersister:2699 -  Insert 0: insert into regemp122 (name, salary, bonus, id) values (?, ?, ?, ?)
+  02:01:25,948 DEBUG AbstractEntityPersister:2700 -  Update 0: update regemp122 set name=?, salary=?, bonus=? where id=?
+  02:01:25,948 DEBUG AbstractEntityPersister:2701 -  Delete 0: delete from regemp122 where id=?
+  02:01:25,957 DEBUG AbstractEntityPersister:2688 - Static SQL for entity: com.sarker.concrete.Contract_Employee
+  02:01:25,958 DEBUG AbstractEntityPersister:2693 -  Version select: select id from contemp122 where id =?
+  02:01:25,958 DEBUG AbstractEntityPersister:2696 -  Snapshot select: select contract_e_.id, contract_e_.name as name0_, contract_e_.pay_per_hour as pay1_2_, contract_e_.contract_duration as contract2_2_ from contemp122 contract_e_ where contract_e_.id=?
+  02:01:25,958 DEBUG AbstractEntityPersister:2699 -  Insert 0: insert into contemp122 (name, pay_per_hour, contract_duration, id) values (?, ?, ?, ?)
+  02:01:25,958 DEBUG AbstractEntityPersister:2700 -  Update 0: update contemp122 set name=?, pay_per_hour=?, contract_duration=? where id=?
+  02:01:25,959 DEBUG AbstractEntityPersister:2701 -  Delete 0: delete from contemp122 where id=?
+  02:01:25,979 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=?
+  02:01:25,979 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=?
+  02:01:25,980 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=? for update
+  02:01:25,980 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=? for update
+  02:01:25,980 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=? for update
+  02:01:25,987 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=?
+  02:01:25,988 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.sarker.concrete.Employee: select employee0_.id as id0_0_, employee0_.name as name0_0_, employee0_.salary as salary1_0_, employee0_.bonus as bonus1_0_, employee0_.pay_per_hour as pay1_2_0_, employee0_.contract_duration as contract2_2_0_, employee0_.clazz_ as clazz_0_ from ( select null as contract_duration, null as pay_per_hour, null as bonus, name, id, null as salary, 0 as clazz_ from emp122 union select null as contract_duration, null as pay_per_hour, bonus, name, id, salary, 1 as clazz_ from regemp122 union select contract_duration, pay_per_hour, null as bonus, name, id, null as salary, 2 as clazz_ from contemp122 ) employee0_ where employee0_.id=?
+  02:01:25,989 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=?
+  02:01:25,989 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=?
+  02:01:25,990 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=? for update
+  02:01:25,990 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=? for update
+  02:01:25,990 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=? for update
+  02:01:25,991 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=?
+  02:01:25,991 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.sarker.concrete.Regular_Employee: select regular_em0_.id as id0_0_, regular_em0_.name as name0_0_, regular_em0_.salary as salary1_0_, regular_em0_.bonus as bonus1_0_ from regemp122 regular_em0_ where regular_em0_.id=?
+  02:01:25,991 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=?
+  02:01:25,992 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=?
+  02:01:25,992 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=? for update
+  02:01:25,992 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=? for update
+  02:01:25,993 DEBUG EntityLoader:79 - Static select for entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=? for update
+  02:01:25,993 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=?
+  02:01:25,994 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.sarker.concrete.Contract_Employee: select contract_e0_.id as id0_0_, contract_e0_.name as name0_0_, contract_e0_.pay_per_hour as pay1_2_0_, contract_e0_.contract_duration as contract2_2_0_ from contemp122 contract_e0_ where contract_e0_.id=?
+  02:01:25,997 DEBUG SessionFactoryObjectFactory:39 - initializing class SessionFactoryObjectFactory
+  02:01:25,998 DEBUG SessionFactoryObjectFactory:76 - registered: 297e9fcd68ceb3540168ceb355ea0000 (unnamed)
+  02:01:25,998  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+  02:01:25,999 DEBUG SessionFactoryImpl:308 - instantiated session factory
+  02:01:26,003  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+  02:01:26,003  INFO SchemaUpdate:126 - fetching database metadata
+  02:01:26,004 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  02:01:26,004 DEBUG DriverManagerConnectionProvider:99 - using pooled JDBC connection, pool size: 0
+  02:01:26,014  INFO SchemaUpdate:138 - updating schema
+  02:01:26,014 DEBUG Configuration:1117 - processing extends queue
+  02:01:26,014 DEBUG Configuration:1121 - processing collection mappings
+  02:01:26,014 DEBUG Configuration:1132 - processing native query and ResultSetMapping mappings
+  02:01:26,014 DEBUG Configuration:1140 - processing association property references
+  02:01:26,014 DEBUG Configuration:1162 - processing foreign key constraints
+  02:01:26,015  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  02:01:26,015  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+  02:01:26,015  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+  02:01:26,015  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost/test
+  02:01:26,016  INFO DriverManagerConnectionProvider:83 - connection properties: {user=root, password=root@18}
+  02:01:26,016 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  02:01:26,016 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  02:01:26,041 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:mysql://localhost/test, Isolation Level: 4
+  02:01:26,041  INFO SettingsFactory:81 - RDBMS: MySQL, version: 8.0.15
+  02:01:26,041  INFO SettingsFactory:82 - JDBC driver: MySQL Connector/J, version: mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+  02:01:26,041 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  02:01:26,041  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+  02:01:26,042  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  02:01:26,042  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  02:01:26,042  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+  02:01:26,042  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+  02:01:26,042  INFO SettingsFactory:145 - JDBC batch size: 15
+  02:01:26,043  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+  02:01:26,043  INFO SettingsFactory:153 - Scrollable result sets: enabled
+  02:01:26,043 DEBUG SettingsFactory:157 - Wrap result sets: disabled
+  02:01:26,043  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+  02:01:26,043  INFO SettingsFactory:169 - Connection release mode: auto
+  02:01:26,043  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+  02:01:26,044  INFO SettingsFactory:196 - Default batch fetch size: 1
+  02:01:26,044  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+  02:01:26,044  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+  02:01:26,044  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  02:01:26,044  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  02:01:26,044  INFO SettingsFactory:212 - Query language substitutions: {}
+  02:01:26,044  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+  02:01:26,045  INFO SettingsFactory:222 - Second-level cache: enabled
+  02:01:26,045  INFO SettingsFactory:226 - Query cache: disabled
+  02:01:26,045  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+  02:01:26,045  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+  02:01:26,045  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+  02:01:26,045 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  02:01:26,046  INFO SettingsFactory:277 - Statistics: disabled
+  02:01:26,046  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+  02:01:26,046  INFO SettingsFactory:296 - Default entity-mode: pojo
+  02:01:26,114  INFO TableMetadata:39 - table found: test.contemp122
+  02:01:26,114  INFO TableMetadata:40 - columns: [contract_duration, pay_per_hour, name, id]
+  02:01:26,114  INFO TableMetadata:42 - foreign keys: []
+  02:01:26,115  INFO TableMetadata:43 - indexes: [primary]
+  02:01:26,116  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  02:01:26,117  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+  02:01:26,117  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+  02:01:26,117  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost/test
+  02:01:26,117  INFO DriverManagerConnectionProvider:83 - connection properties: {user=root, password=root@18}
+  02:01:26,118 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  02:01:26,118 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  02:01:26,141 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:mysql://localhost/test, Isolation Level: 4
+  02:01:26,142  INFO SettingsFactory:81 - RDBMS: MySQL, version: 8.0.15
+  02:01:26,142  INFO SettingsFactory:82 - JDBC driver: MySQL Connector/J, version: mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+  02:01:26,142 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  02:01:26,142  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+  02:01:26,143  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  02:01:26,143  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  02:01:26,144  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+  02:01:26,144  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+  02:01:26,144  INFO SettingsFactory:145 - JDBC batch size: 15
+  02:01:26,144  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+  02:01:26,145  INFO SettingsFactory:153 - Scrollable result sets: enabled
+  02:01:26,145 DEBUG SettingsFactory:157 - Wrap result sets: disabled
+  02:01:26,146  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+  02:01:26,146  INFO SettingsFactory:169 - Connection release mode: auto
+  02:01:26,146  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+  02:01:26,154  INFO SettingsFactory:196 - Default batch fetch size: 1
+  02:01:26,165  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+  02:01:26,165  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+  02:01:26,165  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  02:01:26,166  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  02:01:26,166  INFO SettingsFactory:212 - Query language substitutions: {}
+  02:01:26,166  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+  02:01:26,166  INFO SettingsFactory:222 - Second-level cache: enabled
+  02:01:26,167  INFO SettingsFactory:226 - Query cache: disabled
+  02:01:26,167  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+  02:01:26,167  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+  02:01:26,167  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+  02:01:26,167 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  02:01:26,168  INFO SettingsFactory:277 - Statistics: disabled
+  02:01:26,168  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+  02:01:26,168  INFO SettingsFactory:296 - Default entity-mode: pojo
+  02:01:26,193  INFO TableMetadata:39 - table found: test.emp122
+  02:01:26,193  INFO TableMetadata:40 - columns: [name, id]
+  02:01:26,193  INFO TableMetadata:42 - foreign keys: []
+  02:01:26,193  INFO TableMetadata:43 - indexes: [primary]
+  02:01:26,194  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  02:01:26,194  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+  02:01:26,194  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+  02:01:26,194  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost/test
+  02:01:26,194  INFO DriverManagerConnectionProvider:83 - connection properties: {user=root, password=root@18}
+  02:01:26,194 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  02:01:26,194 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  02:01:26,214 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:mysql://localhost/test, Isolation Level: 4
+  02:01:26,214  INFO SettingsFactory:81 - RDBMS: MySQL, version: 8.0.15
+  02:01:26,214  INFO SettingsFactory:82 - JDBC driver: MySQL Connector/J, version: mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+  02:01:26,215 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  02:01:26,215  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+  02:01:26,215  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  02:01:26,215  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  02:01:26,215  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+  02:01:26,215  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+  02:01:26,215  INFO SettingsFactory:145 - JDBC batch size: 15
+  02:01:26,215  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+  02:01:26,216  INFO SettingsFactory:153 - Scrollable result sets: enabled
+  02:01:26,216 DEBUG SettingsFactory:157 - Wrap result sets: disabled
+  02:01:26,216  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+  02:01:26,216  INFO SettingsFactory:169 - Connection release mode: auto
+  02:01:26,216  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+  02:01:26,216  INFO SettingsFactory:196 - Default batch fetch size: 1
+  02:01:26,216  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+  02:01:26,216  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+  02:01:26,217  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  02:01:26,217  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  02:01:26,217  INFO SettingsFactory:212 - Query language substitutions: {}
+  02:01:26,217  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+  02:01:26,217  INFO SettingsFactory:222 - Second-level cache: enabled
+  02:01:26,217  INFO SettingsFactory:226 - Query cache: disabled
+  02:01:26,217  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+  02:01:26,218  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+  02:01:26,218  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+  02:01:26,218 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  02:01:26,218  INFO SettingsFactory:277 - Statistics: disabled
+  02:01:26,218  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+  02:01:26,218  INFO SettingsFactory:296 - Default entity-mode: pojo
+  02:01:26,292  INFO TableMetadata:39 - table found: test.regemp122
+  02:01:26,292  INFO TableMetadata:40 - columns: [bonus, name, id, salary]
+  02:01:26,292  INFO TableMetadata:42 - foreign keys: []
+  02:01:26,307  INFO TableMetadata:43 - indexes: [primary]
+  02:01:26,308  INFO DriverManagerConnectionProvider:147 - cleaning up connection pool: jdbc:mysql://localhost/test
+  02:01:26,309  INFO SchemaUpdate:160 - schema update complete
+  02:01:26,313 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  02:01:26,313 DEBUG SessionFactoryImpl:390 - Checking 0 named HQL queries
+  02:01:26,313 DEBUG SessionFactoryImpl:410 - Checking 0 named SQL queries
+  02:01:26,315  INFO DriverManagerConnectionProvider:147 - cleaning up connection pool: jdbc:mysql://localhost/test
+  02:01:26,352 DEBUG SessionImpl:220 - opened session at timestamp: 15496560863
+  02:01:26,354 DEBUG JDBCTransaction:54 - begin
+  02:01:26,354 DEBUG ConnectionManager:415 - opening JDBC connection
+  02:01:26,354 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  02:01:26,354 DEBUG DriverManagerConnectionProvider:99 - using pooled JDBC connection, pool size: 0
+  02:01:26,355 DEBUG JDBCTransaction:59 - current autocommit status: false
+  02:01:26,355 DEBUG JDBCContext:210 - after transaction begin
+  02:01:26,357 DEBUG IdentifierValue:104 - id unsaved-value: 0
+  02:01:26,358 DEBUG AbstractSaveEventListener:489 - transient instance of: com.sarker.concrete.Employee
+  02:01:26,358 DEBUG DefaultPersistEventListener:124 - saving transient instance
+  02:01:26,360 DEBUG IncrementGenerator:80 - fetching initial value: select max(ids_.id) from ( select id from regemp122 union select id from emp122 union select id from contemp122 ) ids_
+  02:01:26,361 DEBUG AbstractBatcher:358 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  02:01:26,361 DEBUG SQL:393 - select max(ids_.id) from ( select id from regemp122 union select id from emp122 union select id from contemp122 ) ids_
+  02:01:26,362 DEBUG AbstractBatcher:476 - preparing statement
+  02:01:26,366 DEBUG IncrementGenerator:95 - first free id: 7
+  02:01:26,367 DEBUG AbstractBatcher:366 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  02:01:26,367 DEBUG AbstractBatcher:525 - closing statement
+  02:01:26,367 DEBUG AbstractSaveEventListener:113 - generated identifier: 7, using strategy: org.hibernate.id.IncrementGenerator
+  02:01:26,369 DEBUG AbstractSaveEventListener:152 - saving [com.sarker.concrete.Employee#7]
+  02:01:26,387 DEBUG IdentifierValue:104 - id unsaved-value: 0
+  02:01:26,387 DEBUG AbstractSaveEventListener:489 - transient instance of: com.sarker.concrete.Regular_Employee
+  02:01:26,387 DEBUG DefaultPersistEventListener:124 - saving transient instance
+  02:01:26,387 DEBUG AbstractSaveEventListener:113 - generated identifier: 8, using strategy: org.hibernate.id.IncrementGenerator
+  02:01:26,388 DEBUG AbstractSaveEventListener:152 - saving [com.sarker.concrete.Regular_Employee#8]
+  02:01:26,388 DEBUG IdentifierValue:104 - id unsaved-value: 0
+  02:01:26,388 DEBUG AbstractSaveEventListener:489 - transient instance of: com.sarker.concrete.Contract_Employee
+  02:01:26,389 DEBUG DefaultPersistEventListener:124 - saving transient instance
+  02:01:26,389 DEBUG AbstractSaveEventListener:113 - generated identifier: 9, using strategy: org.hibernate.id.IncrementGenerator
+  02:01:26,389 DEBUG AbstractSaveEventListener:152 - saving [com.sarker.concrete.Contract_Employee#9]
+  02:01:26,390 DEBUG JDBCTransaction:103 - commit
+  02:01:26,391 DEBUG SessionImpl:337 - automatically flushing session
+  02:01:26,391 DEBUG AbstractFlushingEventListener:58 - flushing session
+  02:01:26,393 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+  02:01:26,394 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+  02:01:26,394 DEBUG AbstractFlushingEventListener:171 - Flushing entities and processing referenced collections
+  02:01:26,396 DEBUG AbstractFlushingEventListener:210 - Processing unreferenced collections
+  02:01:26,396 DEBUG AbstractFlushingEventListener:224 - Scheduling collection removes/(re)creates/updates
+  02:01:26,396 DEBUG AbstractFlushingEventListener:85 - Flushed: 3 insertions, 0 updates, 0 deletions to 3 objects
+  02:01:26,396 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+  02:01:26,397 DEBUG Printer:83 - listing entities:
+  02:01:26,398 DEBUG Printer:90 - com.sarker.concrete.Employee{name=Tamim, id=7}
+  02:01:26,398 DEBUG Printer:90 - com.sarker.concrete.Regular_Employee{bonus=5, name=Alamin Sarker, id=8, salary=50000.0}
+  02:01:26,399 DEBUG Printer:90 - com.sarker.concrete.Contract_Employee{contract_duration=15 hours, pay_per_hour=1000.0, name=Imam Hasan, id=9}
+  02:01:26,399 DEBUG AbstractFlushingEventListener:290 - executing flush
+  02:01:26,399 DEBUG ConnectionManager:463 - registering flush begin
+  02:01:26,399 DEBUG AbstractEntityPersister:2154 - Inserting entity: [com.sarker.concrete.Employee#7]
+  02:01:26,404 DEBUG AbstractBatcher:358 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  02:01:26,405 DEBUG SQL:393 - insert into emp122 (name, id) values (?, ?)
+  02:01:26,405 DEBUG AbstractBatcher:476 - preparing statement
+  02:01:26,406 DEBUG AbstractEntityPersister:1942 - Dehydrating entity: [com.sarker.concrete.Employee#7]
+  02:01:26,406 DEBUG StringType:80 - binding 'Tamim' to parameter: 1
+  02:01:26,406 DEBUG IntegerType:80 - binding '7' to parameter: 2
+  02:01:26,407 DEBUG AbstractEntityPersister:2154 - Inserting entity: [com.sarker.concrete.Regular_Employee#8]
+  02:01:26,407 DEBUG AbstractBatcher:44 - Executing batch size: 1
+  02:01:26,410 DEBUG AbstractBatcher:366 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  02:01:26,411 DEBUG AbstractBatcher:525 - closing statement
+  02:01:26,411 DEBUG AbstractBatcher:358 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  02:01:26,412 DEBUG SQL:393 - insert into regemp122 (name, salary, bonus, id) values (?, ?, ?, ?)
+  02:01:26,412 DEBUG AbstractBatcher:476 - preparing statement
+  02:01:26,413 DEBUG AbstractEntityPersister:1942 - Dehydrating entity: [com.sarker.concrete.Regular_Employee#8]
+  02:01:26,413 DEBUG StringType:80 - binding 'Alamin Sarker' to parameter: 1
+  02:01:26,414 DEBUG FloatType:80 - binding '50000.0' to parameter: 2
+  02:01:26,414 DEBUG IntegerType:80 - binding '5' to parameter: 3
+  02:01:26,414 DEBUG IntegerType:80 - binding '8' to parameter: 4
+  02:01:26,414 DEBUG AbstractEntityPersister:2154 - Inserting entity: [com.sarker.concrete.Contract_Employee#9]
+  02:01:26,415 DEBUG AbstractBatcher:44 - Executing batch size: 1
+  02:01:26,417 DEBUG AbstractBatcher:366 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  02:01:26,417 DEBUG AbstractBatcher:525 - closing statement
+  02:01:26,418 DEBUG AbstractBatcher:358 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  02:01:26,418 DEBUG SQL:393 - insert into contemp122 (name, pay_per_hour, contract_duration, id) values (?, ?, ?, ?)
+  02:01:26,418 DEBUG AbstractBatcher:476 - preparing statement
+  02:01:26,419 DEBUG AbstractEntityPersister:1942 - Dehydrating entity: [com.sarker.concrete.Contract_Employee#9]
+  02:01:26,419 DEBUG StringType:80 - binding 'Imam Hasan' to parameter: 1
+  02:01:26,419 DEBUG FloatType:80 - binding '1000.0' to parameter: 2
+  02:01:26,419 DEBUG StringType:80 - binding '15 hours' to parameter: 3
+  02:01:26,420 DEBUG IntegerType:80 - binding '9' to parameter: 4
+  02:01:26,420 DEBUG AbstractBatcher:44 - Executing batch size: 1
+  02:01:26,421 DEBUG AbstractBatcher:366 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  02:01:26,421 DEBUG AbstractBatcher:525 - closing statement
+  02:01:26,421 DEBUG ConnectionManager:472 - registering flush end
+  02:01:26,422 DEBUG AbstractFlushingEventListener:321 - post flush
+  02:01:26,422 DEBUG JDBCContext:201 - before transaction completion
+  02:01:26,422 DEBUG SessionImpl:393 - before transaction completion
+  02:01:26,426 DEBUG JDBCTransaction:116 - committed JDBC Connection
+  02:01:26,427 DEBUG JDBCContext:215 - after transaction completion
+  02:01:26,427 DEBUG ConnectionManager:398 - aggressively releasing JDBC connection
+  02:01:26,427 DEBUG ConnectionManager:435 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+  02:01:26,427 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  02:01:26,428 DEBUG SessionImpl:422 - after transaction completion
+  02:01:26,428 DEBUG SessionImpl:273 - closing session
+  02:01:26,428 DEBUG ConnectionManager:369 - connection already null in cleanup : no action
+  
